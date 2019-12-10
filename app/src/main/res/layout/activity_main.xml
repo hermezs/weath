@@ -6,6 +6,17 @@
   android:layout_height="match_parent"
   tools:context=".MainActivity">
 
+  <RelativeLayout
+      android:id="@+id/activity_main"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/z1" />
+  </RelativeLayout>
+
   <TableLayout
     android:id="@+id/tableLayout"
     android:layout_width="wrap_content"
@@ -27,11 +38,11 @@
         android:inputType="textPersonName" />
 
       <TextView
-        android:id="@+id/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Your weather"
-        android:textColor="@color/colorPrimary" />
+          android:id="@+id/text"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Ваша погода"
+          android:textColor="#3F51B5" />
     </TableRow>
 
     <TableRow
@@ -39,10 +50,13 @@
       android:layout_height="match_parent">
 
       <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Click" />
+          android:id="@+id/button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="#A4045704"
+          android:text="Узнать"
+          android:textColor="#37CAB9"
+          android:textColorLink="#E72973" />
     </TableRow>
 
     <TableRow
@@ -56,22 +70,26 @@
       android:layout_height="match_parent">
 
       <CheckBox
-        android:id="@+id/Fahre"
-        android:layout_width="94dp"
-        android:layout_height="wrap_content"
-        android:text="F" />
+          android:id="@+id/Fahre"
+          android:layout_width="94dp"
+          android:layout_height="wrap_content"
+          android:text="Фаренгейт"
+          android:textColor="#2196F3"
+          android:textColorHint="#7E5959" />
 
       <CheckBox
-        android:id="@+id/Cels"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="C" />
+          android:id="@+id/Cels"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Цельсий"
+          android:textColor="#2196F3" />
 
       <CheckBox
-        android:id="@+id/Kelvin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="K" />
+          android:id="@+id/Kelvin"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Кельвин"
+          android:textColor="#2196F3" />
 
     </TableRow>
   </TableLayout>

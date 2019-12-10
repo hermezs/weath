@@ -66,7 +66,7 @@ public class Function {
   public static JSONObject getWeatherJSON(String s,String met){
     try {
 
-      URL url = new URL(String.format("http://api.openweathermap.org/data/2.5/weather?q="+s+"&mode=json&APPID=2b1cdf491ccf9192213ece92d3da79c1&units="+met));
+      URL url = new URL(String.format("http://api.openweathermap.org/data/2.5/weather?q="+s+"&mode=json&APPID=eee0b2156b64eb1b3bd718f7a825bd97="+met));
       HttpURLConnection connection =
         (HttpURLConnection)url.openConnection();
 
