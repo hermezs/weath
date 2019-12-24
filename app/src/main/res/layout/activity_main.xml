@@ -1,97 +1,146 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk/res-auto"
-  xmlns:tools="http://schemas.android.com/tools"
-  android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  tools:context=".MainActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
-  <RelativeLayout
-      android:id="@+id/activity_main"
+
+  <FrameLayout
       android:layout_width="match_parent"
       android:layout_height="match_parent">
 
     <ImageView
+        android:id="@+id/imageView8"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/z1" />
-  </RelativeLayout>
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/z1" />
+  </FrameLayout>
 
   <TableLayout
-    android:id="@+id/tableLayout"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="202dp"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent">
+      android:id="@+id/tableLayout"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="202dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
 
     <TableRow
-      android:layout_width="match_parent"
-      android:layout_height="match_parent">
-
-      <EditText
-        android:id="@+id/City"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName" />
-
-      <TextView
-          android:id="@+id/text"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Ваша погода"
-          android:textColor="#3F51B5" />
-    </TableRow>
-
-    <TableRow
-      android:layout_width="match_parent"
-      android:layout_height="match_parent">
-
-      <Button
-          android:id="@+id/button"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:background="#A4045704"
-          android:text="Узнать"
-          android:textColor="#37CAB9"
-          android:textColorLink="#E72973" />
-    </TableRow>
-
-    <TableRow
-      android:layout_width="match_parent"
-      android:layout_height="match_parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     </TableRow>
 
     <TableRow
-      android:layout_width="match_parent"
-      android:layout_height="match_parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-      <CheckBox
-          android:id="@+id/Fahre"
-          android:layout_width="94dp"
-          android:layout_height="wrap_content"
-          android:text="Фаренгейт"
-          android:textColor="#2196F3"
-          android:textColorHint="#7E5959" />
+    </TableRow>
 
-      <CheckBox
-          android:id="@+id/Cels"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Цельсий"
-          android:textColor="#2196F3" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-      <CheckBox
-          android:id="@+id/Kelvin"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Кельвин"
-          android:textColor="#2196F3" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     </TableRow>
   </TableLayout>
+
+  <TextView
+      android:id="@+id/text"
+      android:layout_width="178dp"
+      android:layout_height="40dp"
+      android:text="Погода в городе"
+      android:textColor="#E91E63"
+      android:textSize="18sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.357" />
+
+  <Button
+      android:id="@+id/button"
+      android:layout_width="182dp"
+      android:layout_height="wrap_content"
+      android:background="#2196F3"
+      android:text="Узнать"
+      android:textColor="#E91E63"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.497"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.584" />
+
+  <EditText
+      android:id="@+id/City"
+      android:layout_width="213dp"
+      android:layout_height="49dp"
+      android:layout_marginBottom="140dp"
+      android:autoText="false"
+      android:ems="10"
+      android:inputType="textPersonName"
+      android:textColor="#E91E63"
+      android:textColorHint="#2196F3"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.888"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.44" />
+
+  <CheckBox
+      android:id="@+id/Cels"
+      android:layout_width="100dp"
+      android:layout_height="36dp"
+      android:text="Цельсий"
+      android:textColor="#2196F3"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.192"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.466" />
+
+  <CheckBox
+      android:id="@+id/Fahre"
+      android:layout_width="120dp"
+      android:layout_height="41dp"
+      android:text="Фаренгейт"
+      android:textColor="#2196F3"
+      android:textColorHint="#7E5959"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.79"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.469" />
+
+  <Button
+      android:id="@+id/location"
+      android:layout_width="188dp"
+      android:layout_height="46dp"
+      android:background="#2196F3"
+      android:text="Геолокация"
+      android:textColor="#E91E63"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.484"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.252" />
+
+  <androidx.constraintlayout.widget.Group
+      android:id="@+id/group"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
